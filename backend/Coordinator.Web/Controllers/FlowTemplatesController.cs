@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Coordinator.Web.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/flow-templates")]
 public class FlowTemplatesController : ControllerBase
 {
     private readonly ILogger<FlowTemplatesController> _logger;

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Coordinator.Web.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/tasks")]
 public class TasksController : ControllerBase
 {
     private readonly ILogger<TasksController> _logger;

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Coordinator.Web.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/workers")]
 public class WorkersController : ControllerBase
 {
     private readonly ILogger<WorkersController> _logger;

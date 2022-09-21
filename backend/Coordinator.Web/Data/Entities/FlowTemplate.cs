@@ -6,7 +6,7 @@ public class FlowTemplate : Entity
 
     public bool[][]? Arcs { get; set; }
 
-    public virtual ICollection<Step>? Steps { get; set; }
+    public virtual ICollection<StepInTemplate>? Steps { get; set; }
 
     public virtual ICollection<FlowInstance>? Instances { get; set; }
 }

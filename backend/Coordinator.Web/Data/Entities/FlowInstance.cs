@@ -2,7 +2,9 @@
 
 public class FlowInstance : Entity
 {
-    public long CurrentStepId { get; set; }
+    public long TemplateId { get; set; }
+
+    public long CurrentStepInstanceId { get; set; }
 
     public bool Completed { get; set; }
 

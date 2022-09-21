@@ -2,9 +2,11 @@
 
 public class StepInstance : Entity
 {
-    public IDictionary<string, object>? Argument { get; set; }
+    public long StepId { get; set; }
 
-    public IDictionary<string, object>? Result { get; set; }
+    public IDictionary<string, object>? Input { get; set; }
+
+    public IDictionary<string, object>? Output { get; set; }
 
     public virtual Step? Step { get; set; }
 
