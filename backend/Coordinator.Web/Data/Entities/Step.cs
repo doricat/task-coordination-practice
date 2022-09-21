@@ -6,6 +6,12 @@ public class Step : Entity
 
     public string? Name { get; set; }
 
+    public int? Timeout { get; set; }
+
+    public int? MaxRetries { get; set; }
+
+    public StepFlag Flag { get; set; }
+
     public virtual Worker? Worker { get; set; }
 
     public virtual ICollection<StepInstance>? Instances { get; set; }
