@@ -86,9 +86,9 @@ public class PgSqlDbContext : DbContext
             builder.Property(x => x.Id).HasColumnName("id").HasColumnType("bigint").ValueGeneratedNever();
             builder.Property(x => x.TemplateId).HasColumnName("template_id").HasColumnType("bigint").IsRequired();
             builder.Property(x => x.CurrentStepInstanceId).HasColumnName("current_step_instance_id").HasColumnType("bigint").IsRequired();
-            builder.Property(x => x.Completed).HasColumnName("completed").HasColumnType("boolean").IsRequired();
+            builder.Property(x => x.State).HasColumnName("state").HasColumnType("int").IsRequired();
             builder.Property(x => x.CreatedAt).HasColumnName("created_at").HasColumnType("timestamp").IsRequired();
-            builder.Property(x => x.CompletedAt).HasColumnName("completed_at").HasColumnType("timestamp");
+            builder.Property(x => x.UpdatedAt).HasColumnName("updated_at").HasColumnType("timestamp");
 
             builder.HasOne(x => x.Template).WithMany(x => x.Instances).HasForeignKey(x => x.TemplateId).IsRequired().OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(x => x.CurrentStep).WithMany(x => x.FlowInstances).HasForeignKey(x => x.CurrentStepInstanceId).IsRequired().OnDelete(DeleteBehavior.Cascade);

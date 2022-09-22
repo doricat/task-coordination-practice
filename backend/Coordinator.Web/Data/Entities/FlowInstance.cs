@@ -6,11 +6,11 @@ public class FlowInstance : Entity
 
     public long CurrentStepInstanceId { get; set; }
 
-    public bool Completed { get; set; }
+    public FlowInstanceState State { get; set; }
 
     public DateTime CreatedAt { get; set; }
 
-    public DateTime? CompletedAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
 
     public virtual FlowTemplate? Template { get; set; }
 
