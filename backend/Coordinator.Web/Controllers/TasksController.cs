@@ -13,7 +13,7 @@ public class TasksController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{id:maxlength(20)}")]
     public Task<IActionResult> Get([FromRoute] string id)
     {
         throw new NotImplementedException();
@@ -25,19 +25,19 @@ public class TasksController : ControllerBase
         throw new NotImplementedException();
     }
 
-    [HttpPatch("{id}/pause")]
+    [HttpPatch("{id:maxlength(20)}/pause")]
     public Task<IActionResult> Pause([FromRoute] string id, [FromBody] object model)
     {
         throw new NotImplementedException();
     }
 
-    [HttpPatch("{id}/continue")]
+    [HttpPatch("{id:maxlength(20)}/continue")]
     public Task<IActionResult> Continue([FromRoute] string id, [FromBody] object model)
     {
         throw new NotImplementedException();
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("{id:maxlength(20)}")]
     public Task<IActionResult> Delete([FromRoute] string id)
     {
         throw new NotImplementedException();
