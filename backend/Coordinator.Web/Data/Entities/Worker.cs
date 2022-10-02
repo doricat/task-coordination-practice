@@ -6,5 +6,7 @@ public class Worker : Entity
 
     public WorkerType Type { get; set; }
 
+    public string? Url { get; set; }
+
     public virtual ICollection<Step>? Steps { get; set; }
 }

@@ -1,4 +1,5 @@
 ﻿using Coordinator.Web.Data.Entities;
+using Coordinator.Web.WorkerServices;
 
 namespace Coordinator.Web.DataTransferObjects;
 

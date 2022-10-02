@@ -24,4 +24,10 @@ public class FlowTemplatesController : ControllerBase
     {
         throw new NotImplementedException();
     }
+
+    [HttpPost]
+    public Task<IActionResult> Post([FromBody] object model)
+    {
+        throw new NotImplementedException();
+    }
 }

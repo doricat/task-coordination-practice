@@ -10,5 +10,5 @@ public class StepInstance : Entity
 
     public virtual Step? Step { get; set; }
 
-    public virtual ICollection<FlowInstance>? FlowInstances { get; set; }
+    public virtual FlowInstance? FlowInstance { get; set; }
 }

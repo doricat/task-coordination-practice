@@ -2,5 +2,7 @@
 
 public enum WorkerType
 {
-    TestWorker = 0
+    None = 0,
+    StoragePolicymaker,
+    Porter,
 }

@@ -37,8 +37,8 @@ public class TasksController : ControllerBase
         throw new NotImplementedException();
     }
 
-    [HttpDelete("{id:maxlength(20)}")]
-    public Task<IActionResult> Delete([FromRoute] string id)
+    [HttpPatch("{id:maxlength(20)}/abort")]
+    public Task<IActionResult> Abort([FromRoute] string id)
     {
         throw new NotImplementedException();
     }

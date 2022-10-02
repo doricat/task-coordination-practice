@@ -15,4 +15,9 @@ public class FlowInstance : Entity
     public virtual FlowTemplate? Template { get; set; }
 
     public virtual StepInstance? CurrentStep { get; set; }
+
+    public void MoveNext()
+    {
+        throw new NotImplementedException();
+    }
 }

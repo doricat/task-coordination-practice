@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Callbacks\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Migrations\" />
   </ItemGroup>

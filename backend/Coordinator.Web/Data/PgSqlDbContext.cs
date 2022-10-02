@@ -91,7 +91,7 @@ public class PgSqlDbContext : DbContext
             builder.Property(x => x.UpdatedAt).HasColumnName("updated_at").HasColumnType("timestamp");
 
             builder.HasOne(x => x.Template).WithMany(x => x.Instances).HasForeignKey(x => x.TemplateId).IsRequired().OnDelete(DeleteBehavior.Cascade);
-            builder.HasOne(x => x.CurrentStep).WithMany(x => x.FlowInstances).HasForeignKey(x => x.CurrentStepInstanceId).IsRequired().OnDelete(DeleteBehavior.Cascade);
+            // builder.HasOne(x => x.CurrentStep).WithMany(x => x.FlowInstances).HasForeignKey(x => x.CurrentStepInstanceId).IsRequired().OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<Worker>(builder =>
